@@ -1,119 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Maia Cufré</title>
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-img {
-    max-width: 60%;
-    height: auto;
-    width: auto\9; /* ie8 */
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
+<head>
+  <title>Maia Cufré</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Maia Cufré — Economics PhD student at Northwestern University.">
+  <link rel="canonical" href="https://maiacufre.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maia Cufré">
+  <meta property="og:description" content="Economics PhD student at Northwestern University.">
+  <meta property="og:url" content="https://maiacufre.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Maia Cufré">
+  <meta name="twitter:description" content="Economics PhD student at Northwestern University.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Maia Cufré",
+    "url": "https://maiacufre.com/",
+    "jobTitle": "Economics PhD Student",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Northwestern University",
+      "url": "https://www.northwestern.edu/"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad Torcuato Di Tella",
+      "url": "https://www.utdt.edu/"
+    },
+    "sameAs": [
+      "https://economics.northwestern.edu/people/graduate/#C",
+      "https://scholar.google.com/citations?user=h2bijvsAAAAJ&hl=en",
+      "https://github.com/MaiaCufre",
+      "https://www.linkedin.com/in/maia-cufr%C3%A9-2a04b5199"
+    ]
+  }
+  </script>
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="icons/favicon_io/favicon.ico">
+  <link rel="manifest" href="icons/favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-pale-red w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="research.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Research</a>
-    <a href="cv.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CV</a>
-    <!--
-    <a href="resources.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Resources</a>
-    -->
-    <div class="w3-dropdown-hover w3-hide-small">
-    </div>
-  </div>
-</div>
+<svg class="icon-sprite" aria-hidden="true" focusable="false">
+  <symbol id="icon-envelope" viewBox="0 0 512 512">
+    <path d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/>
+  </symbol>
+  <symbol id="icon-file" viewBox="0 0 640 640">
+    <path d="M192 64C156.7 64 128 92.7 128 128L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 234.5C512 217.5 505.3 201.2 493.3 189.2L386.7 82.7C374.7 70.7 358.5 64 341.5 64L192 64zM453.5 240L360 240C346.7 240 336 229.3 336 216L336 122.5L453.5 240z"/>
+  </symbol>
+  <symbol id="icon-book" viewBox="0 0 640 640">
+    <path d="M480 576L192 576C139 576 96 533 96 480L96 160C96 107 139 64 192 64L496 64C522.5 64 544 85.5 544 112L544 400C544 420.9 530.6 438.7 512 445.3L512 512C529.7 512 544 526.3 544 544C544 561.7 529.7 576 512 576L480 576zM192 448C174.3 448 160 462.3 160 480C160 497.7 174.3 512 192 512L448 512L448 448L192 448zM224 216C224 229.3 234.7 240 248 240L424 240C437.3 240 448 229.3 448 216C448 202.7 437.3 192 424 192L248 192C234.7 192 224 202.7 224 216zM248 288C234.7 288 224 298.7 224 312C224 325.3 234.7 336 248 336L424 336C437.3 336 448 325.3 448 312C448 298.7 437.3 288 424 288L248 288z"/>
+  </symbol>
+  <symbol id="icon-scholar" viewBox="0 0 640 640">
+    <path d="M320 80L32 224L320 368L608 224L320 80zM128 294.4L128 400C128 461.9 216.8 512 320 512C423.2 512 512 461.9 512 400L512 294.4L320 390.4L128 294.4zM560 304L560 438.7C546 447 536 462.2 536 480C536 506.5 557.5 528 584 528C610.5 528 632 506.5 632 480C632 462.2 622 447 608 438.7L608 280L560 304z"/>
+  </symbol>
+  <symbol id="icon-github" viewBox="0 0 640 640">
+    <path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"/>
+  </symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 640 640">
+    <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/>
+  </symbol>
+</svg>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-pale-red w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="research.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Research</a>
-  <a href="cv.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CV</a>
-  <!--
-  <a href="resources.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Resources</a>
-  -->
-</div>
+<div class="site-container text-center" id="band">
+  <div class="main-wrap">
+    <section class="hero fade-in">
+      <div class="profile-layout">
+        <div class="profile-copy">
+          <h1 class="text-blue-grey">Maia Cufré</h1>
+          <div class="bio-text">
+            <p>I am a PhD student in the Department of Economics at Northwestern University. I hold a BA and an MA in Economics from Universidad Torcuato Di Tella.</p>
+            <p>My research interests are in microeconomic theory, with a focus on asymmetric information, learning, and screening.</p>
+          </div>
 
-  <!-- Main section-->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h1 class="w3-wide w3-text-pale-red">Maia Cufré</h1>
-    <!-- <p class="w3-opacity"><i>Economist</i></p> -->
-    <h4 class="w3-justify">
-      <br>I am a Master in Economics Candidate at Universidad Torcuato di Tella. I am working as a research assitant as well as a Lecturer and Teaching Assistant in the Economics Department within the same institution.</br>
-      <br>My interests span from industrial organization to international trade, including labor issues, game theory, and asymmetric information problems.</br>
-      <br>I am applying for a PhD in Economics for the 2024-2025 cycle.</br>
+          <div class="btn-row">
+            <a class="btn" href="mailto:mcufre@u.northwestern.edu" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" focusable="false"><use href="#icon-envelope"></use></svg> Email</a>
+            <a class="btn" href="docs/CV_Cufre.pdf" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" focusable="false"><use href="#icon-file"></use></svg> CV</a>
+            <a class="btn" href="research.html"><svg class="svg-icon" aria-hidden="true" focusable="false"><use href="#icon-book"></use></svg> Research</a>
+            <a class="btn" href="https://scholar.google.com/citations?user=h2bijvsAAAAJ&hl=en" target="_blank" rel="noopener"><svg class="svg-icon" aria-hidden="true" focusable="false"><use href="#icon-scholar"></use></svg> Scholar</a>
+          </div>
+        </div>
 
-  <h2 class="w3-wide w3-left-align" >Contact Info</h2>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom w3-left-align">
-        <i class="fa fa-envelope" style="width:30px"> </i> maiamicac [at) gmail (dot] com <br>
-        <i class="fa fa-map-marker" style="width:30px"></i> Buenos Aires, Argentina<br>
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="images/headshot.jpg" alt="Maia Cufré" width="1306" height="1741" decoding="async">
+        </div>
       </div>
-    </div>
-
-
-    </div>
+    </section>
   </div>
-  
-<!-- End Page Content -->
 </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <button class="w3-button" onclick="window.open('https://github.com/MaiaCufre', '_blank')" title="GitHub"><i class="fa fa-github w3-hover-opacity"></i>
-  <button class="w3-button" onclick="window.open('https://www.linkedin.com/in/maia-cufr%C3%A9-2a04b5199', '_blank')" title="LinkedIn"><i class="fa fa-linkedin w3-hover-opacity"></i>
-  <button class="w3-button" onclick="window.location.href='mailto:maiamicac@gmail.com'" title="Mail"><i class="fa fa-envelope w3-hover-opacity"></i>
+<footer class="site-footer">
+  <div class="copyright">
+    © <span id="yr"></span> <a href="https://economics.northwestern.edu/people/graduate/#C" target="_blank" rel="me noopener">Maia Cufré</a>
+  </div>
 </footer>
 
 <script>
-
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+document.getElementById("yr").textContent = new Date().getFullYear();
 </script>
 
 </body>

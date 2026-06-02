@@ -1,0 +1,537 @@
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter/InterVariable-Italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --bg: #f7f9fb;
+  --txt: #1f2937;
+  --muted: #6b7280;
+  --brand: #7b5bb3;
+  --brand-2: #5d3f91;
+  --card: #ffffff;
+  --radius: 16px;
+  --rule: #e5e7eb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--txt);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a:hover {
+  color: var(--brand-2);
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-blue-grey {
+  color: var(--brand);
+}
+
+.fade-in {
+  animation: fade-in 0.8s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+img {
+  max-width: 60%;
+  height: auto;
+}
+
+.center {
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-container {
+  width: 100%;
+  max-width: 1060px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.main-wrap {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 40px 16px 32px;
+}
+
+.hero {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  gap: 28px;
+  align-items: center;
+  text-align: left;
+}
+
+.profile-copy {
+  min-width: 0;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.bio-text {
+  font-size: 18px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.bio-text p:last-child {
+  margin-bottom: 0;
+}
+
+.profile-photo-wrap {
+  width: 200px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  justify-self: end;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  box-shadow: 0 8px 22px rgba(31, 41, 55, 0.12);
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  transform: scale(1.08);
+}
+
+.page-title {
+  text-align: center;
+}
+
+.section-heading {
+  margin: 24px 0 10px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.profile-copy .btn-row {
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--txt);
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--brand);
+  color: var(--brand-2);
+  box-shadow: 0 6px 18px rgba(31, 111, 235, 0.1);
+}
+
+.mySlides {
+  display: none;
+}
+
+.carousel-slide {
+  margin-top: 34px;
+  text-align: center;
+}
+
+.carousel-image {
+  display: block;
+  width: min(48%, 360px);
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  margin: 4px 0 0;
+  opacity: 0.6;
+}
+
+.research-wrap {
+  max-width: 940px;
+}
+
+.research-hero {
+  padding: 40px 34px;
+}
+
+.research-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.research-header .page-title {
+  margin-bottom: 6px;
+}
+
+.research-title {
+  text-wrap: balance;
+}
+
+.research-intro {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.research-section + .research-section {
+  margin-top: 36px;
+}
+
+.research-section .section-heading {
+  margin: 0 0 16px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.research-item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.research-item + .research-item {
+  margin-top: 20px;
+}
+
+.research-section .research-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.paper-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.paper-title a {
+  color: var(--txt);
+  text-decoration: underline;
+  text-decoration-color: rgba(96, 125, 139, 0.35);
+  text-underline-offset: 4px;
+}
+
+.paper-title a:hover {
+  color: var(--brand);
+  text-decoration-color: currentColor;
+}
+
+.paper-authors {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.paper-meta {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.paper-abstract {
+  margin: 14px 0 0;
+  font-size: 16px;
+  line-height: 1.65;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.paper-abstract-label {
+  font-weight: 700;
+}
+
+.thesis-note {
+  font-style: italic;
+}
+
+.site-footer {
+  margin-top: auto;
+  padding: 32px 16px;
+  text-align: center;
+  background-color: rgb(246, 248, 250);
+  opacity: 0.75;
+}
+
+.footer-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--brand);
+  text-decoration: none;
+  transition: transform 0.12s, box-shadow 0.12s, border-color 0.12s;
+}
+
+.icon-btn:hover {
+  transform: translateY(-1px);
+  border-color: var(--brand);
+  color: var(--brand);
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(31, 111, 235, 0.12);
+}
+
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  max-width: none;
+  flex: 0 0 auto;
+  vertical-align: -0.125em;
+  color: var(--brand);
+  fill: currentColor;
+}
+
+.svg-icon use {
+  fill: currentColor;
+}
+
+.icon-btn .svg-icon {
+  width: 21px;
+  height: 21px;
+}
+
+.fab-home .svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.copyright {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.copyright a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: var(--brand);
+  text-decoration: underline;
+}
+
+.fab-home {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 1000;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: var(--card);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+}
+
+.fab-home:hover {
+  transform: translateY(-1px);
+  border-color: var(--brand);
+  box-shadow: 0 14px 28px rgba(31, 111, 235, 0.18);
+}
+
+@media (max-width: 820px) {
+  .site-container {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .main-wrap {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 12px 28px;
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 20px;
+  }
+
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    min-width: 0;
+  }
+
+  .profile-photo-wrap {
+    width: 176px;
+    justify-self: center;
+    order: -1;
+  }
+
+  .profile-photo {
+    width: 100%;
+  }
+
+  .profile-copy h1 {
+    text-align: center;
+  }
+
+  .bio-text {
+    text-align: left;
+  }
+
+  .research-header {
+    margin-bottom: 26px;
+  }
+
+  .research-section + .research-section {
+    margin-top: 32px;
+  }
+
+  .paper-title {
+    font-size: 18px;
+  }
+
+  .paper-authors,
+  .paper-abstract {
+    font-size: 15px;
+  }
+
+  .paper-meta {
+    font-size: 14px;
+  }
+
+  .btn-row {
+    gap: 10px;
+  }
+
+  .fab-home {
+    right: 14px;
+    bottom: 14px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 540px) {
+  .research-intro {
+    display: none;
+  }
+
+  .research-title-separator {
+    display: none;
+  }
+
+  .research-title-topic {
+    display: block;
+  }
+
+  .main-wrap {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .hero {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .carousel-image {
+    width: min(74%, 360px);
+  }
+
+  .btn-row {
+    gap: 8px;
+  }
+
+  .btn {
+    padding: 9px 12px;
+  }
+}
